@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Should you get the Apple tablet?</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    
+    <style type="text/css">
+      /* Resets */
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+      h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lucida Grande', 'Helvetica', 'Arial', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 200px;
+        color: #555;
+        background-color: lightgray;
+      }
+      
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      
+      #answer {
+        color: #333;
+        font-weight: bold;
+        margin-top: 70px;
+        font-size: 150px;
+      }
+      
+      #answer .loader {
+        color: darkgray;
+        font-size: 25px;
+      }
+    </style>
+    
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+      // Load jQuery
+      google.load("jquery", "1.4");
+
+      google.setOnLoadCallback(function() {
+        var decision = Math.floor(Math.random()*2)
+        if (decision == 0) {
+          var response = "NO";
+        } else {
+          var response = "YES";
+        }
+        jQuery('#answer').html(response);
+      });
+    </script>
+    
+  </head>
+
+  <body>
+    
+    <h1>Should you get the Apple tablet?</h1>
+    
+    <div id="answer">
+      <span class="loader">Analyzing&hellip;</span>
+    </div>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-2771447-5");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </body>
+</html>
