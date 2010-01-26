@@ -49,12 +49,7 @@
       google.load("jquery", "1.4");
 
       google.setOnLoadCallback(function() {
-        var decision = Math.floor(Math.random()*2)
-        if (decision == 0) {
-          var response = "NO";
-        } else {
-          var response = "YES";
-        }
+        var response = Math.random() < 0.5 ? "NO" : "YES";
         
         window.setTimeout(function() {
           jQuery('#answer').html(response);
