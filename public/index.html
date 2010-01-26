@@ -55,7 +55,11 @@
         } else {
           var response = "YES";
         }
-        jQuery('#answer').html(response);
+        
+        window.setTimeout(function() {
+          jQuery('#answer').html(response);
+        }, 1000);
+        
       });
     </script>
     
