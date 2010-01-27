@@ -42,19 +42,21 @@
       }
     </style>
     
-    <script src="http://www.google.com/jsapi"></script>
-    <script>
-      // Load jQuery
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      
       google.load("jquery", "1.4");
 
       google.setOnLoadCallback(function() {
-        var response = Math.random() < 0.5 ? "NO" : "YES";
+        var response = (Math.random() < 0.5) ? "NO" : "YES";
         
         window.setTimeout(function() {
           jQuery('#answer').html(response);
         }, 2000);
         
       });
+      //]]>
     </script>
     
   </head>
