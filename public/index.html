@@ -45,7 +45,8 @@
     <script type="text/javascript">
       //<![CDATA[
       window.onload = function() {
-        var response = (Math.random() < 0.5) ? "NO" : "YES";
+        var answers = ["NO", "YES"];
+        var response = answers[Math.floor(Math.random() * answers.length)];
 
         setTimeout(function() {
           document.getElementById("answer").innerHTML = response;
